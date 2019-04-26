@@ -7,6 +7,18 @@ fun main(args:Array<String>){
     displaySeperator('3',5)
     println()
     displaySeperator(size=3, character = '5') //named arguments
+    println()
+    println("1. " + sum())
+    println("2. " + sum(1))
+    println("3. " + sum(b=2))
+    println("4. " + sum(c=3))
+    println("5. " + sum(a=1,b=3))
+    println("6. " + sum(a=1,c=3))
+    println("7. " + sum(b=3,c=3))
+    println("8. " + sum(c=1,a=3,b=3))
+
+
+
 }
 
 // block body
@@ -28,3 +40,5 @@ fun displaySeperator(character: Char = '*', size: Int = 10){
     }
 }
 
+//how many argument combinations are possible
+fun sum(a: Int = 0,b:Int = 0, c:Int = 0) :Int = a + b + c
